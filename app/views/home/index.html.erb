@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sam</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="C:/Users/Pacecom/Desktop/sample/sam/app/assets/stylesheets/application.scss">
+    <script src="C:/Users/Pacecom/Desktop/sample/sam/app/assets/javascripts/application.js"></script>
+    <script src="C:/Users/Pacecom/Desktop/sample/sam/app/assets/javascripts/application.js"></script>
+    </head> 
+
+ 
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark disply=block">
+  <div class="container">
+  <div class="navbar-header">
+      
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+  </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+  <ul class="nav navbar-nav navbar-right">
+    <li><a href="#about">ABOUT</a></li>
+    <li><a href="#services">SERVICES</a></li>
+    <li><a href="#portfolio">PORTFOLIO</a></li>
+    <li><a href="#pricing">PRICING</a></li>
+    <li><a href="#contact">CONTACT</a></li>
+  </ul>
+</div>   
+ 
+</nav>
+
+
+
+
+
+<div class="jumbotron text-center">
+
+  <h2>NAKUL BHARADWAJ</h2>
+  <p>SOFTWARE ENGINEER</p>
+  
+</div>
+  
+
+<div class="container-fluid my-3 bg-dark text-white ">
+
+  <h3>ABOUT ME!!!</h3>
+  <br>
+  <p> Experienced Software Engineer with a demonstrated history of working in the information technology and services industry. Skilled in Python, Ruby on Rails, XAMP, Java, and JavaScript. Strong engineering professional with a Masters degree focused in MCA from RV College Of Engineering. </p>
+  <br>
+  <input type = "button" onclick = "Hello();" name = "ok" value = "Get in touch" />
+
+</div>
+
+
+<div class="container-fluid my-2 bg-dark text-white">
+  
+  <h4>ACADEMIC QUALIFICATION</h4>
+  <br>
+  
+  <p>Master of Computer Application, R V College of Engineering, affiliated to Visvesvaraya Technological University, Bengaluru. </p>
+
+  <p>Bachelor of Computer Application, PES Institute of Technology, affiliated to Bangalore University, Bengaluru. </p>
+
+</div>
+
+
+<div class="container-fluid my-2  bg-dark text-white">
+
+<h3> INTERNSHIPS </h3>
+<br>
+
+<p>Indian Space Research Organization, Bengaluru (Jan’ 19 – May’ 19)</p>
+
+<p>Inversa Technosoft Pvt. Ltd, Bengaluru (Sept ‘16 – Dec’ 16)</p>
+
+</div>
+
+
+
+<div class="container-fluid text-center">
+  <h2>PROJECTS</h2>
+  <br>
+ 
+  <div class="row">
+    <div class="col-sm-4">
+
+      <span>
+      <%= image_tag("img/sk.jpg", class:"img-responsive",  width:"300", height:"200", hspace: "20", style: "border:5px solid black") %>
+      </span>
+    <br>
+      <h4>SMART PANTRY SYSTEM</h4><br>
+      <p>A smart pantry system is an IOT based application which is used to calculate the weight of the ingredients in the kitchen.</p>
+    
+    </div>
+    
+    <div class="col-sm-4">
+      
+    <span>
+    <%= image_tag("img/vrct.jpg", class:"img-responsive",  width:"300", height:"200", hspace: "20", style: "border:5px solid black") %>
+    </span>
+      <h4>VR COLLEGE TOUR</h4><br>
+      <p>Virtual Reality college tour is an entire campus tour of RV College of Engineering. The project is built using Unity 3D software.</p>
+    
+    </div>
+
+
+    <div class="col-sm-4">
+     
+      <span>
+      <%= image_tag("img/gt.jpg", class:"img-responsive",  width:"300", height:"200", hspace: "20", style: "border:5px solid black") %>
+      </span>
+      <h4>DUOLINGO</h4><br>
+      <p>Duolingo is to catechize a beginner in learning C and C++ languages in the easiest and interesting way. The software provides a fun way of learning programming languages via Games/Quiz.</p>
+    
+    </div>
+  
+  </div>
+
+
+<div class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <H3>NAKUL BHARADWAJ R.S</H3>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Bangalore, India</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +91 9663656918</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> nakulbharadwaj22295@gmail.com</p>
+    </div>
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+
+
+
+
+  
+  
+
+
+            
+
+</body>
+</html>
+
+
+
+
