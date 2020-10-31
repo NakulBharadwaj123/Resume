@@ -7,9 +7,11 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>  
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="C:/Users/Pacecom/Desktop/sample/sam/app/assets/stylesheets/application.scss">
-    <script src="C:/Users/Pacecom/Desktop/sample/sam/app/assets/javascripts/application.js"></script>
-    <script src="C:/Users/Pacecom/Desktop/sample/sam/app/assets/javascripts/application.js"></script>
+    <link rel="stylesheet" href="./stylesheets/application.scss">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./javascripts/application.js"></script>
+    
+    
     </head> 
 
  
@@ -120,18 +122,22 @@
       <p><span class="glyphicon glyphicon-envelope"></span> nakulbharadwaj22295@gmail.com</p>
     </div>
     <div class="col-sm-7">
+    <form method="POST" class="form-control" >
       <div class="row">
         <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+       
         </div>
         <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+       
         </div>
       </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <textarea class="form-control" name="message" id="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+      
       <div class="row">
         <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
+          <button class="btn btn-default pull-right" type="submit" onclick="sendEmail()">Send</button>
         </div>
       </div>
     </div>
